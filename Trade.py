@@ -78,8 +78,7 @@ def main(app_data):
     st.sidebar.subheader('Trading Volatility:')
     risk = st.sidebar.selectbox('', ('Low', 'Medium', 'High'), index = volitility_index)
 
-    page_icon = Image.open("./icon.png")
-    st.set_page_config(layout="centered", page_title="ALGOSTATS SMART MARKET ADVISOR", page_icon=page_icon)
+    st.title(f'SMART MARKET ADVISOR.')
     st.subheader(f'{label} Data Sourced from {exchange}.')
     st.info(f'Predicting...')
     
