@@ -165,13 +165,4 @@ if __name__ == '__main__':
     app_data = Data_Sourcing()
     main(app_data = app_data)
 
-def hide_streamlit_logo():
-    # Hide the "hosted with Streamlit" logo
-    hide_css = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    </style>
-    """
-    st.markdown(hide_css, unsafe_allow_html=True)
-hide_streamlit_logo()
+
