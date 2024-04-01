@@ -80,7 +80,7 @@ def main(app_data):
 
     st.title(f'SMART MARKET ADVISOR')
     st.subheader(f'{label} Data Sourced from {exchange}.')
-    def hide_streamlit_logo():
+def hide_streamlit_logo():
     # Hide the "hosted with Streamlit" logo
     hide_css = """
     <style>
@@ -89,8 +89,8 @@ def main(app_data):
     </style>
     """
     st.markdown(hide_css, unsafe_allow_html=True)
-
 hide_streamlit_logo()
+    
     st.info(f'Predicting...')
     
     future_price = 1   
