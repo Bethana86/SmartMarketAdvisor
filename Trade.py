@@ -165,4 +165,13 @@ if __name__ == '__main__':
     app_data = Data_Sourcing()
     main(app_data = app_data)
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)    
+
 
